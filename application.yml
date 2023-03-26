@@ -15,7 +15,7 @@ spring:
             read-timeout: 3000
       circuitbreaker:
         enabled: true
-  
+
   kafka:
     bootstrap-servers: 172.20.126.119:9092
     consumer:
@@ -36,7 +36,7 @@ spring:
       properties:
         json:
           add.type.headers: false
-        
+
 resilience:
   factory:
     configs:
@@ -50,6 +50,7 @@ resilience:
 kafka:
   topics:
     dsi:
+      prefix: DS_
       one: DS_1
     cpu-data: TOPIC_CPU-1
     disk-data: TOPIC_DISK-1
