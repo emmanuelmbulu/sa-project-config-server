@@ -1,1 +1,27 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
 
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 3000
+            read-timeout: 3000
+      circuitbreaker:
+        enabled: true
+        
+resilience:
+  factory:
+    configs:
+      time-limiter:
+        timeout: 5
+      circuit-breaker:
+        sliding-window-size: 10
+        failure-rate: 50
+        duration-in-open-state: 30
