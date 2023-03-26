@@ -59,8 +59,8 @@ kafka:
       network-data: TOPIC_NETWORK-1
       ram-data: TOPIC_RAM-1
     cds:
-      one: CD_1
-      two: CD_2
+      one: CDS_1
+      two: CDS_2
     scoring:
       lu-bound: BOUND_TOPIC
       si:
