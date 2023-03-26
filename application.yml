@@ -63,4 +63,7 @@ kafka:
       two: CD_2
     scoring:
       lu-bound: BOUND_TOPIC
-      one: SCR_1
+      si:
+        one: SI_1
+      nsi:
+        one: NSI_1
