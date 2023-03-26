@@ -15,18 +15,7 @@ spring:
             read-timeout: 3000
       circuitbreaker:
         enabled: true
-        
-resilience:
-  factory:
-    configs:
-      time-limiter:
-        timeout: 5
-      circuit-breaker:
-        sliding-window-size: 10
-        failure-rate: 50
-        duration-in-open-state: 30
-        
-spring:
+  
   kafka:
     bootstrap-servers: 172.20.126.119:9092
     consumer:
@@ -47,6 +36,16 @@ spring:
       properties:
         json:
           add.type.headers: false
+        
+resilience:
+  factory:
+    configs:
+      time-limiter:
+        timeout: 5
+      circuit-breaker:
+        sliding-window-size: 10
+        failure-rate: 50
+        duration-in-open-state: 30
 
 kafka:
   topics:
