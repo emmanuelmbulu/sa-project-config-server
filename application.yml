@@ -44,3 +44,15 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        json:
+          add.type.headers: false
+
+kafka:
+  topics:
+    dsi:
+      one: DS_1
+    cpu-data: TOPIC_CPU-1
+    disk-data: TOPIC_DISK-1
+    network-data: TOPIC_NETWORK-1
+    ram-data: TOPIC_RAM-1
