@@ -8,6 +8,10 @@ spring:
   kafka:
     application-id: scoringservice
     window-size: 5
+    
+  cloud:
+    compatibility-verifier:
+      enabled: false
 
 #sleuth:
   #sampler:
