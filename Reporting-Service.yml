@@ -12,3 +12,15 @@ spring:
     consumer:
       group-id: gid
       auto-offset-reset: earliest
+      
+---
+spring:
+  profiles: ReportingService1
+server:
+  port: 8092
+
+---
+spring:
+  profiles: ReportingService2
+server:
+  port: 8093
