@@ -61,6 +61,7 @@ kafka:
     cds:
       one: CDS_1
       two: CDS_2
+      key: cds_x
     scoring:
       lu-bound: BOUND_TOPIC
       si:
