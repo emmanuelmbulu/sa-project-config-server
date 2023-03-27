@@ -72,3 +72,5 @@ kafka:
         one: SI_1
       nsi:
         one: NSI_1
+    reporting:
+      nsi-pattern: NSI.*
