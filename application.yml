@@ -35,7 +35,11 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         json:
-          add.type.headers: false
+          add.type.headers: false   
+
+sleuth:
+  sampler:
+    probability: 1 #100% (default = 10%)
 
 resilience:
   factory:
