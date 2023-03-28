@@ -69,8 +69,8 @@ kafka:
     scoring:
       lu-bound: BOUND_TOPIC
       si:
-        one: SI_1
+        one: SI_1_2
       nsi:
-        one: NSI_1
+        one: NSI_1_2
     reporting:
       nsi-pattern: NSI.*
