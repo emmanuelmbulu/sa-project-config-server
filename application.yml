@@ -54,6 +54,11 @@ resilience:
         failure-rate: 50
         duration-in-open-state: 30
 
+
+logstash:
+  host: localhost
+  port: 5000
+
 kafka:
   topics:
     dis:
