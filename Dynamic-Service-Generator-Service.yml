@@ -25,7 +25,3 @@ mvn:
   home:
     windows: classpath:maven-resources/apache-maven-3.9.1
     mac: /usr/local/Cellar/maven/3.9.0/libexec
-
-logstash:
-  host: 127.0.0.1
-  port: 5001
