@@ -36,6 +36,9 @@ spring:
       properties:
         json:
           add.type.headers: false   
+  
+  zipkin:
+    base-url: http://localhost:9411/
 
 sleuth:
   sampler:
