@@ -16,7 +16,9 @@ spring:
         -
           id: reportingModule
           uri: lb://ReportingService
-          predicates: Path=/report/**
+          predicates: 
+            -
+              Path=/report/**
 
 ribbon:
   ConnectTimeout: 3000
