@@ -17,7 +17,7 @@ spring:
         enabled: true
 
   kafka:
-    bootstrap-servers: 172.20.126.119:9092
+    bootstrap-servers: localhost:9092
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
